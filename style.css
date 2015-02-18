@@ -1,0 +1,1665 @@
+/*
+Theme Name:    	Dark Snow Custom Theme 
+Description:    Dark Snow Paralax Theme, Child theme
+Author:         Fulcrum Creatives, Taylor Kruse
+Author URI:     http://www.fulcrumcreatives.com
+Version:        0.1.0
+*/
+
+/* bottom blue: #50C8E8 */
+/* top/cockpit: #333 */
+
+
+
+/* Available Web Fonts:
+font-family:'Eurostile Next W01 Bold';
+font-family:'EurostileNextW01-CnBd';
+font-family:'EurostileNextW02-LightC';
+font-family:'EurostileNextW02-Cn';
+font-family:'EurostileNextW02-Semibo';
+font-family:'EurostileNextW02-UltLig';
+font-family:'EurostileNextW02-Light';
+font-family:'EurostileNextW01-Regula'; 
+font-family:'EurostileNextW01-SmBd';
+*/
+
+@import url("blog.css");
+
+
+/* basics and resets */
+html{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-color:#000;
+	
+	margin:0;
+	padding:0;
+	font-family:Helvetica,Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif;
+
+}
+
+body#layout-popup{
+	background-color:#fff;
+	margin:10px;
+}
+
+.clear{
+	clear:both;
+}
+
+
+a{
+  
+}
+
+a:hover{
+  
+}
+
+
+/* end basics and resets */
+
+/* styles the popup window(s) content */
+#page-popup,
+#main-popup{
+  position:relative;
+  clear:both;
+}
+
+#page-popup{
+	color:#333;
+	background-color:#ccc;
+}
+
+
+#popup-title{
+	font-family:'Eurostile Next W01 Bold';
+	font-size:20pt;
+}
+
+.popup-content{
+	font-family:'EurostileNextW01-Regula'; 
+	font-size:12pt;
+}
+
+/* end styles the popup window(s) content */
+
+/* main layout */
+
+#logo-outer{
+	width:100%;
+	height:120px;
+	/*
+	overflow:hidden; */
+}
+
+#logo-wrapper{
+	z-index:101;
+	/* width:988px; */
+	max-width: 988px;
+	/* width: 85%; */
+	margin:0 auto;
+	padding:45px 0 0 45px;
+	height:185px;
+	overflow:hidden;
+}
+
+#logo{
+	position:relative;
+	top:0;
+	left:0;
+	z-index:101;
+	width:384px;
+	height:85px;
+	z-index:101;
+	float:left;
+}
+
+#logo-words{
+	position:relative;
+	top:30px;
+	left:15px;
+	z-index:101;
+	width:260px;
+	height:30px;
+	z-index:101;
+	float:left;
+}
+
+#menu{
+	position:relative;
+	width:auto;
+	height:24px;
+	top:35px;
+	right: 40px;
+	z-index:101;
+	float:right;
+	/* font-family:'EurostileNextW02-LightC';*/
+	font-family:'EurostileNextW02-Semibo';
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: .06em;
+}
+
+
+
+#menu a {
+	color: #000;
+	text-decoration: none;
+	
+	   -webkit-transition:color .25s ease-in;  
+   -moz-transition:color .25s ease-in;  
+   -o-transition:color .25s ease-in;  
+   transition:color .25s ease-in;  
+}
+
+.give-now #menu a {
+	color: #fff !important;}
+
+#menu a:hover  {
+	color: #EF4240;
+	text-decoration: none;
+	
+}
+
+#nav-sub{
+	margin-left:20px;
+}
+
+#nav-about{
+	margin-left:20px;
+}	
+
+#nav-in-the-news{
+	margin-left:20px;
+}
+ 
+#nav-expedition{
+	margin-left:20px;
+}
+
+#nav-supporters{
+	margin-left:20px;
+}
+
+#nav-givenow{
+	margin-left:20px;
+}
+
+#main-overlay-wrapper-give{
+	position:absolute;
+	top:170px;
+	width:100%;
+	height:295px;
+	
+}
+
+#main-overlay{
+	/*margin:-305px auto 0 auto;*/
+	margin:0 auto;
+	width:645px;
+   /* height:250px; */
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: url(images/overlay_bg_lighter.png);
+	overflow:hidden;
+	padding: 35px;	
+	z-index:500;
+}
+
+#main-overlay-wrapper{
+  position:relative;
+  top:auto;
+  height:auto!important;
+  min-height:295px;
+  clear:both;
+
+}
+
+
+
+/* #main-overlay-wrapper.subpage{
+  position:relative;
+  top:auto;
+  height:auto!important;
+  min-height:295px;
+  clear:both;
+  margin-top:-345px;
+}
+
+ #main-overlay-wrapper.front {
+  position:relative;
+  top:auto;
+  height:auto!important;
+  min-height:295px;
+  clear:both;
+  margin-top: -120px;
+} */
+
+.front #main-overlay, #main-overlay.single {
+	background-color: #fff;
+	background-image: none;
+	
+background: -moz-linear-gradient(top,  rgba(255,255,255,0.20) 0%, rgba(255,255,255,1) 700px); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.65)), color-stop(700px,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0.20) 0%,rgba(255,255,255,1) 700px); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,0.20) 0%,rgba(255,255,255,1) 700px); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,0.20) 0%,rgba(255,255,255,1) 700px); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,0.20) 0%,rgba(255,255,255,1) 700px); /* W3C */
+
+
+	
+	
+}
+
+#big-quote, #cite-quote, #give-now-button {
+	text-transform: uppercase;
+}
+
+#big-quote .line1 {
+	letter-spacing: .07em;
+}
+
+#big-quote .line2 {
+	letter-spacing: .13em;
+}
+
+#big-quote .line3 {
+	letter-spacing: .02em;
+}
+
+#todays-action-wrapper {
+	color: #fff;
+	font-family:'EurostileNextW01-Regula';
+	font-size: 2em;
+	line-height: 1.4em;
+	
+	text-align: center;
+}
+
+#main-overlay.single{
+  height:auto!important;
+  min-height:265px;
+  text-transform: normal;
+  width: 75%;
+  min-width: 665px;
+  max-width: 925px;
+  
+  -webkit-border-radius: 15px;
+-webkit-border-bottom-right-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius: 15px;
+-moz-border-radius-bottomright: 5px;
+-moz-border-radius-bottomleft: 5px;
+border-radius: 15px;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+  
+}
+
+#main-overlay.single{
+  font-family:'EurostileNextW01-Regula';
+  line-height: 1.4em;
+}
+
+#main-overlay.single #big-quote {
+	font-family:'Eurostile Next W01 Bold';
+	font-size: 2em;
+	line-height: 1.4em;
+	text-transform: uppercase;
+}
+
+
+#main-overlay #big-quote {
+	font-family:'Eurostile Next W01 Bold';
+	font-size: 2em;
+	line-height: 1.4em;
+}
+
+#main-overlay #cite-quote {
+	font-family:'EurostileNextW01-Regula';
+}
+
+/* #main-overlay img{
+	margin:40px 0 0 30px;
+} */
+
+.give-now #main-overlay #give-now-button {
+	float: right;
+	margin-top: -110px;
+}
+
+
+
+#give-now-button a {
+	display: block;
+	background-color: #2C3132;
+
+	
+	background-image: url(images/button_givenow_hand.png);
+	background-repeat: no-repeat;
+	background-position: 12px 28px;
+	margin: 3px 0;
+   padding: 14px 10px 14px 85px;
+	
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.8em;
+}
+
+.give-now #give-now-button a {
+	width: 165px;
+	height: 93px;
+
+}
+
+#give-now-button .give-small {
+	font-size: .5em;
+	font-family:'EurostileNextW02-LightC';
+}
+
+#give-now-button .give-big {
+	font-size: .8em;
+	color: #4FC7E7;
+	font-family:'EurostileNextW02-Semibo';
+	line-height: 1.2em;
+}
+
+.give-now #give-now-button .give-big {
+	font-size: 1em;
+}
+
+#give-now-button a:hover, #social-media-links .social-link a:hover  {
+	background-color: #EF4241;
+
+	-moz-transition: background-color 0.3s ease 0s;
+	-webkit-transition: background-color 0.3s ease 0s;
+	}
+	
+#give-now-button a
+	
+
+#todays-action-wrapper{
+	height:110px;
+}
+
+#todays-action{
+	height:219px;
+	width:639px;
+	margin:0 auto;
+}
+
+.title-overlay{
+  	background: url(images/overlay_bg.png);  /* turn this off or change it to switch up background */
+  	
+  	-webkit-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	
+	padding:20px 20px 0px 20px;
+	
+	letter-spacing: .02em;
+	line-height: 1.4em;
+}
+
+.basic-marker{
+  
+}
+
+.marker{
+  
+}
+
+.marker.basic{
+  width:31px;
+  height:45px;
+  margin:0 5px 0 0;
+}
+
+.marker-image{
+  float:left;
+  width:50px;
+  margin-left: -70px;
+  margin-top: -15px;
+}
+
+.marker-text{
+  	width:100%;  
+	margin-bottom:5px;
+	
+	color: #000;
+    font-family: 'EurostileNextW01-Regula';
+    font-size: 14pt;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.marker-text a{
+  text-decoration:none;
+  color:#000;
+}
+
+div.marker-readmore{
+	clear:both;
+	margin-top:4px;
+	margin-bottom: 20px;
+	padding-top:4px;
+	float:right;
+	width:100%;
+	display: block;
+	text-align: right;
+	
+	
+	font-size: 14px;
+    font-family: 'EurostileNextW01-Regula';
+    text-transform: uppercase;
+    
+}
+
+
+
+a, a:visited{
+	color: #476264;
+}
+
+a.readmore-link, a:visited.readmore-link {
+	text-decoration: none;
+}
+
+a:hover.readmore-link {
+	color: #EF4241;
+}
+
+
+.sub-overlay{
+	background: url(images/overlay_bg.png);
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding:30px 20px 0 20px;
+}
+
+.sub-overlay-footer{
+	background: url(images/overlay_bg.png);
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding:10px 20px 30px 20px;
+}
+
+.hidden{
+	display:none;
+}
+
+#intense-marker{
+	float:right;
+	width:55px;
+	margin-top:5px;
+}
+
+#intense-label{
+	font-family:'EurostileNextW02-Light';
+	font-size:11pt;
+	color:#50C8E8;
+}
+
+a#intense-text-link{
+	color:#50C8E8;
+	text-decoration:none;
+	text-align:center;
+}
+
+#intense-area{
+	position:absolute;
+	margin-left:160px;
+	width:125px;
+	top:3655px;
+}
+
+#intense-area-left{
+	float:left;
+	width:80px;
+}
+
+#intense-area-right{
+	float:right;
+	width:30px;
+	margin-top:30px;
+	margin-left:10px;
+}
+
+.expanded {
+	height: auto;
+}
+
+#our-journey-begins{
+	position:absolute;
+	width:auto;
+	top:190px;
+	margin-left:280px;
+	z-index:200;
+}
+
+#our-journey-begins.expanded{
+	width:400px;
+
+}
+
+#our-research-is-critical{
+	position:absolute;
+	width:auto;
+	top:300px;
+	/*margin-top:300px;*/
+	margin-left:460px;
+	z-index:210;
+}
+
+#our-research-is-critical.expanded{
+	width:400px;
+
+}
+
+#the-problem{
+	position:absolute;
+	top:660px;
+	width:auto;
+	margin-left:320px;
+	z-index:210;
+}
+
+#the-problem.expanded{
+	width:200px;
+
+}
+
+
+#melting-of-greenland{
+	position:absolute;
+	top:700px;
+	width:220px;
+	margin-left:700px;
+	z-index:210;
+}
+
+#melting-of-greenland.expanded{
+	width:220px;
+
+}
+
+#call-for-funding{
+	position:absolute;
+	top:1100px;
+	width:350px;
+	margin-left:250px;
+	z-index:210;
+}
+
+#call-for-funding.expanded{
+	width:350px;
+}
+
+#sampling-greenland-the-dark-snow-project {
+	position:absolute;
+	top:2100px;
+	width:575px;
+	margin-left:260px;
+	z-index:210;
+}
+
+#sampling-greenland-the-dark-snow-project.expanded {
+	width:575px;
+}
+
+
+#supporters{
+	position:absolute;
+	top:1200px;
+	width:auto;
+	margin-left:750px;
+	z-index:210;
+}
+
+#supporters.expanded{
+	width:200px;
+
+}
+
+#in-the-news{
+	position:absolute;
+	top:2800px;
+	width:275px;
+	margin-left:360px;
+	z-index:210;
+}
+
+#in-the-news.expanded{
+	width:350px;
+
+}
+
+
+#dark-snow-expedition-team{
+	position:absolute;
+	top:2600px;
+	width:275px;
+	margin-left:390px;
+	z-index:210;
+}
+
+#dark-snow-expedition-team.expanded{
+	width:350px;
+
+}
+
+#expedition-plan-2013{
+	position:absolute;
+	top:3000px;
+	width:300px;
+	margin-left:500px;
+	z-index:210;
+	
+	background-color: #4FC7E7;
+	background-image: none;
+}
+
+#expedition-plan-2013.expanded{
+	width:300px;
+
+	background-color: #4FC7E7;
+	background-image: none;
+}
+
+ol {
+    counter-reset:li; /* Initiate a counter */
+    margin-left:0; /* Remove the default left margin */
+    padding-left:0; /* Remove the default left padding */
+}
+ol > li {
+    position:relative; /* Create a positioning context */
+    margin:0 0 6px 2em; /* Give each list item a left margin to make room for the numbers */
+    padding:4px 8px; /* Add some spacing around the content */
+    list-style:none; /* Disable the normal item numbering */
+}
+ol > li:before {
+    content:counter(li); /* Use the counter as content */
+    counter-increment:li; /* Increment the counter by 1 */
+    /* Position and style the number */
+    position:absolute;
+    top:-2px;
+    left:-2em;
+    width:2em;
+    /* Some space between the number and the content in browsers that support
+       generated content but not positioning it (Camino 2 is one example) */
+    margin-right:8px;
+    padding:4px;
+
+    color:#fff;
+
+    font-family:'EurostileNextW01-SmBd';
+    text-align:center;
+}
+li ol,
+li ul {margin-top:6px;}
+ol ol li:last-child {margin-bottom:0;}
+
+#expedition-plan-2013 .marker-text a {
+	color: #fff;
+}
+
+#intense-melting{
+	position:absolute;
+	top:3700px;
+	width:230px;
+	margin-left:280px;
+	z-index:230;
+}
+
+#intense-melting.expanded{
+	width:230px;
+
+}
+
+#intense-melting-2{
+	position:absolute;
+	top:4000px;
+	width:160px;
+	height: 160px;
+	margin-left:300px;
+	z-index:230;
+	text-align: center;
+	padding: 10px;
+}
+
+#central-southern-1{
+	position:absolute;
+	top:3550px;
+	width:160px;
+	height: 160px;
+	margin-left:600px;
+	z-index:230;
+	text-align: center;
+	padding: 10px;
+}
+
+#central-southern-2{
+	position:absolute;
+	top:3550px;
+	width:160px;
+	height: 160px;
+	margin-left:800px;
+	z-index:230;
+	text-align: center;
+	padding: 10px;
+}
+
+#intense-melting-2 .title-overlay {
+	padding: 10px;
+}
+
+#central-southern{
+	position:absolute;
+	top:3770px;
+	width:270px;
+	margin-left:650px;
+	z-index:210;
+}
+
+#central-southern .marker-image {
+	
+	}
+
+#central-southern.expanded{
+	width:270px;
+
+}
+
+#airport-1{
+	position:absolute;
+	top:3650px;
+	width:auto;
+	margin-left:320px;
+	z-index:210;
+	height: 20px;
+}
+
+#airport-1.expanded{
+	width:300px;
+
+}
+
+#airport-2{
+	position:absolute;
+	top:3780px;
+	width:auto;
+	margin-left:210px;
+	z-index:210;
+	height: 20px;
+}
+
+#airport-2.expanded{
+	width:150px;
+
+}
+
+#airport-2.title-overlay {
+	padding: 5px 5px 0 5px;
+}
+
+
+#airport-1 .marker-text, #airport-2 .marker-text {
+	color: #EF4241;
+    font-size: 10pt;
+    margin-bottom: 0;
+    }
+    
+#airport-1 .marker-image, #airport-2 .marker-image {
+	margin-left: -60px;
+    margin-top: 0;
+}
+
+#sample-site-1{
+	position:absolute;
+	top:3900px;
+	width:auto;
+	margin-left:460px;
+	z-index:110;
+}
+
+#sample-site-2{
+	position:absolute;
+	top:4000px;
+	width:auto;
+	margin-left:390px;
+	z-index:110;
+}
+
+#map-flag {
+	position:absolute;
+	top:4100px;
+	margin-left:300px;
+	z-index:110;
+}
+
+#map-compass {
+	position:absolute;
+	top:4300px;
+	margin-left:700px;
+	z-index:110;
+}
+
+
+
+#thermometer-wrapper{
+  position:absolute;
+  top:800px;
+  left:20px;
+  z-index:500;
+}
+
+#thermometer{
+  background-image: url(images/thermometer-on.png);
+  width:117px;
+  height:464px;
+  margin-left:41px;
+  z-index:500;
+  background-repeat: no-repeat;
+}
+
+#thermometer.thermometer-1{
+  background-image: url(images/thermometer-on-1.png);
+}
+
+#thermometer.thermometer-2{
+  background-image: url(images/thermometer-on-2.png);
+}
+
+#thermometer.thermometer-3{
+  background-image: url(images/thermometer-on-3.png);
+}
+
+#thermometer.thermometer-4{
+  background-image: url(images/thermometer-on-4.png);
+}
+
+#thermometer.thermometer-5{
+  background-image: url(images/thermometer-on-5.png);
+}
+
+#thermometer.thermometer-6{
+  background-image: url(images/thermometer-on-6.png);
+}
+
+#thermometer.thermometer-7{
+  background-image: url(images/thermometer-on-7.png);
+}
+
+#thermometer.thermometer-8{
+  background-image: url(images/thermometer-on-8.png);
+}
+
+#thermometer.thermometer-9{
+  background-image: url(images/thermometer-on-9.png);
+}
+
+#thermometer.thermometer-10{
+  background-image: url(images/thermometer-on-10.png);
+}
+
+#thermometer.thermometer-11{
+  background-image: url(images/thermometer-on-11.png);
+}
+
+/* full therm */
+#thermometer.thermometer-12{
+  background-image: url(images/thermometer-on-12.png);
+}
+
+#thermometer-level {
+	text-align: center;
+	color: #fff;
+	font-family:'EurostileNextW02-Light';
+	font-size: 1.4em;
+	margin-bottom: 1em;
+}
+
+#thermometer-footer{
+  margin-top:10px;
+  z-index:500;
+}
+
+#thermometer-give-button a {
+	display: block;
+	background-color: #2C3132;
+	width: 115px;
+	height: 60px;
+	background-image: url(images/button_givenow_hand.png);
+	background-repeat: no-repeat;
+	background-position: 12px 12px;
+	text-transform: uppercase;
+	padding: 10px 0 0 85px;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	color: #fff;
+	text-decoration: none;
+	font-size: 2.4em;
+	z-index:500;
+}
+
+#thermometer-give-button .give-small {
+	font-size: .5em;
+	font-family:'EurostileNextW02-LightC';
+	z-index:500;
+}
+
+#thermometer-give-button .give-big {
+	color: #4FC7E7;
+	font-family:'EurostileNextW02-Semibo';
+	z-index:500;
+}
+
+.marker-excerpt{
+	display:none;
+	
+	margin: 10px 0 20px;
+}
+
+a.zmarker-text-link:hover{
+	color: #EF4241;
+	-moz-transition: color 0.3s ease 0s;
+	-webkit-transition: color 0.3s ease 0s;
+}
+
+#thermometer-give-button a:hover {
+	background-color: #EF4241;
+	-moz-transition: background-color 0.3s ease 0s;
+	-webkit-transition: background-color 0.3s ease 0s;
+	z-index:500;
+}
+	
+#main-popup{
+	color:#000;
+	background-color:#fff;
+}
+
+#main-wrapper{
+	width:100%;
+}
+
+
+
+#main,
+#content{
+	display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    
+    padding-bottom: 35px;
+    
+    background: url(images/skyview.jpg) no-repeat center center fixed; 
+    
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/skyview.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/skyview.jpg', sizingMethod='scale')";
+
+  }
+
+
+.give-now #content {
+	background: #000;
+}
+
+
+.main-centered,
+#main-centered{
+	width:1362px;
+	margin:0 auto;
+	font-size: 12px;
+}
+
+#footer-give-now-page .centered{
+	min-width:988px;
+	width:100%;
+}
+
+.centered{
+
+	width:100%;
+}
+
+.centered-within{
+	margin:0 auto;
+}
+
+#content p{
+	/*width:300px;*/
+	/*margin:100px auto;*/
+}
+
+#new-cockpit-wrapper{
+	/*comment if you want a black bg on the cockpit windows*/
+	background-color:#282827;
+	z-index:-1;
+}
+
+#newCockpit,
+#new-cockpit{
+	background: url(images/skyview.jpg) no-repeat 50% 50%;
+	width:1238px;
+	height:524px;
+	overflow:hidden;
+	margin: 0 auto -100px;
+	z-index:-1;
+}
+
+/*
+
+#newCockpit,
+#new-cockpit{
+	background: url(images/skyview.jpg) no-repeat 50% 50%;
+	width:988px;
+	height:304px;
+	overflow:hidden;
+	margin:0 auto;
+	z-index:-1;
+} */
+
+#cockpit-top-bg{
+	position:absolute;
+	top:0;
+	left:0;
+	height:210px;
+	width:100%;
+	background:#333;
+	z-index:-1;
+}
+
+#cockpit-bottom-bg{
+	position:absolute;
+	top:485px;
+	left:0;
+	height:15px;
+	width:100%;
+	background:#282827;
+	z-index:-1;
+}
+
+#cockpit-wrapper{
+	width:100%;
+	z-index:10;
+	/*background: url(images/skyview_split.jpg) no-repeat 50% 50%;*/
+}
+
+#cockpit{	
+	width:988px;
+	height:500px;
+	overflow:hidden;
+	background: url(images/skyview_split.jpg) no-repeat 50% 50%;
+	z-index:10;
+}
+
+#cockpit-top{
+	width:988px;
+	height:210px;
+	overflow:hidden;
+	background: url(images/cockpit_top.png) no-repeat 0 0;
+	z-index:10;
+}
+
+#cockpit-middle{
+	height:190px;
+	z-index:10;
+}
+
+
+#cockpit-bottom{
+	height:100px;
+	width:988px;
+	overflow:hidden;
+	background: url(images/cockpit_bottom.png) no-repeat 0 0;
+	z-index:10;
+}
+
+#gauges-wrapper{
+	width:100%;
+}
+
+#gauges{
+	width:988px;
+	position:relative;
+	height:188px;
+	/*border:1px orange dashed;*/
+}
+
+#give-now-gauge{
+	width:226px;
+	height:188px;
+	position:absolute;
+	top:0;
+	left:60px;
+}
+
+#supporters-gauge{
+	width:138px;
+	height:138px;
+	position:absolute;
+	top:-30px;
+	left:330px;
+}
+
+#expeditions-gauge{
+	width:161px;
+	height:139px;
+	position:absolute;
+	top:-30px;
+	left:520px;
+}
+
+
+#nsew-gauge{
+	width:64px;
+	height:64px;
+	position:absolute;
+	top:20px;
+	left:735px;
+}
+
+#twitter-gauge{
+	width:49px;
+	height:49px;
+	position:absolute;
+	top:135px;
+	left:745px;
+}
+
+#facebook-gauge{
+	width:49px;
+	height:49px;
+	position:absolute;
+	top:90px;
+	left:785px;
+}
+
+#plan-gauge{
+	width:68px;
+	height:68px;
+	position:absolute;
+	top:40px;
+	left:860px;
+}
+
+#left_bg {
+	background: url(images/left_bg.gif) no-repeat;
+	width: 1343px;
+	/* height: 1554px; */
+	
+	padding-left: 650px;
+	padding-top: 180px;
+	
+	margin-left: -650px;
+	margin-top:-180px;
+
+	
+}
+
+#gcont{
+	position:relative;
+	height:1362px;
+	width:1362px; /* 1362 */
+	overflow:hidden;
+	/* background: #000 url(images/left_bg.gif) no-repeat -250px -240px; */
+	margin:0 auto;
+	padding-top:15px;
+	
+}
+
+#gcont-markers{
+	
+}
+
+#wcont{
+	height:2500px;
+	width:1352px; /* 1352 */
+	background: #000 url(images/greenland_mosaic_full.jpg) no-repeat 0 0;
+	float:right;
+	
+	/*margin:0 auto;*/
+}
+
+#footer-wrapper{
+	height:275px;
+	position:absolute;
+	top:4680px;
+	left:0;
+	width:100%;
+	background-color:#50C8E8;
+}
+
+#footer, #contact {
+	/* width:925px; */
+	margin:0 auto;
+	color: #fff;
+	font-family:'EurostileNextW01-Regula';
+	font-size: .75em;
+}
+
+.centered-within {
+	width: 510px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+#footer-social {
+	float: left;
+	padding-top: 40px;
+}
+
+#footer-percent {
+	float: left;
+	padding-top:10px;
+	padding-left: 10px;
+}
+
+.fb-icon, .twitter-icon {
+	display: block;
+	float: right;
+	clear: both;
+	margin: 5px 0 5px 0;
+}
+
+.twitter-icon {
+	margin-right: 20px;
+}
+
+.footer-text {
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	text-align:center;
+}
+
+#give-footer-wrapper {
+	height:895px;
+	position:absolute;
+	top:4650px;
+	left:0;
+	width:100%;
+	background-color:#78bfcd;
+	
+	background-image: url(images/give_bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	display: block;
+}
+
+#give-footer {
+	width: 665px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+	color: #fff;
+}
+
+#givenow-goal {
+	background-image: url(images/givenow_goal.png);
+	background-repeat: no-repeat;
+	width: 572px;
+	height: 239px;
+	text-align: center;
+	
+	font-family:'EurostileNextW01-SmBd';
+	text-transform: uppercase;
+	font-size: 1.2em;
+	
+	margin-left: -5px;
+	padding-left: 90px;
+	
+	padding-top:
+
+
+}
+
+#footer-sub #footer-wrapper,#footer-sub #give-footer-wrapper,#footer-sub #contact-wrapper {
+	position: relative;
+	top: auto;
+}
+
+#footer-sub #footer-wrapper {
+	margin-top: 40px;
+	height: 245px;
+	
+}
+
+#footer-sub #contact-wrapper {
+	margin-top: 0;
+	padding-top: 20px;
+}
+
+.givenow-top {
+font-size: 1.4em;
+padding-top: 50px;
+}
+
+.givenow-bottom {
+	margin-top: 100px;
+}
+
+
+.give-options {
+	font-family:'EurostileNextW01-Regula'; 
+	font-size: .9em;
+
+}
+
+#give-form {
+	
+}
+
+.give-form-extra {
+	font-family:'EurostileNextW01-Regula'; 
+	font-size: 1em;
+	margin-top: -60px;
+}
+
+.copyright {
+	font-family:'EurostileNextW01-Regula'; 
+	font-size: 1.2em;
+	margin-top:10px;
+}
+
+#contact-wrapper {
+	margin-top: 550px;
+	padding-top: 350px;
+	padding-bottom: 30px;
+	background-color: #50C8E8;
+	
+}
+
+
+.contact_left, .contact_right  {
+	float: left;
+	width: 230px;
+	margin-right: 20px;
+	display: inline-block;
+}
+
+/* footer form styling */
+
+#field_1_4 {
+	margin-top: -170px;
+}
+#field_1_5 {
+	margin-top: -20px;
+}
+
+#input_1_4 {
+	font-family:'EurostileNextW01-Regula'; 
+	font-size: 1.2em;
+}
+
+#gform_submit_button_1 {
+	width: 200px;
+	height: 50px;
+	background-color: #EF4241;
+	color: #fff;
+	border: none;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+	font-family:'EurostileNextW01-SmBd';
+	text-transform: uppercase;
+	
+	position: relative;
+	top:-75px;
+	left: 410px;
+}
+
+.gfield_label {
+	font-family:'EurostileNextW01-SmBd';
+	font-weight: 400 !important;
+}
+
+.gform_wrapper input[type="text"], .gform_wrapper input[type="url"], .gform_wrapper input[type="email"], .gform_wrapper input[type="tel"], .gform_wrapper input[type="number"], .gform_wrapper input[type="password"] {
+	border: 1px solid white;
+	padding: 5px !important;
+	margin: 5px 0 5px 0 ;
+}
+
+.gform_wrapper.gf_browser_gecko ul.gform_fields li.gfield div.ginput_complex span.ginput_left select, .gform_wrapper.gf_browser_gecko ul.gform_fields li.gfield div.ginput_complex span.ginput_right select, .gform_wrapper.gf_browser_gecko ul.gform_fields li.gfield select {
+	margin: 5px 0 5px 0 ;
+	border: 1px solid white;
+	padding: 4px;
+	width: 99% !important;
+}
+
+.gform_wrapper .gfield_checkbox li label, .gform_wrapper .gfield_radio li label {
+	font-family:'EurostileNextW01-Regula'; 
+	font-weight: 400 !important;
+}
+
+.gform_wrapper ul.gfield_radio li input[type="radio"]:checked + label, .gform_wrapper ul.gfield_checkbox li input[type="checkbox"]:checked + label {
+	font-family:'EurostileNextW01-SmBd';
+	font-weight: 400 !important;
+}
+
+.gform_wrapper .top_label li.gfield.gf_left_half, .gform_wrapper .top_label li.gfield.gf_right_half  {
+    width: 47% !important;
+}
+
+/* end main layout */
+
+
+/* content positioning */
+article.scrollblock {	
+	height: 1000px;	
+	position: relative;	
+}
+
+article p {
+	/*width: 418px;*/
+	/*margin-left: 15px;*/
+	/*line-height: 1.3em;*/
+	/*margin-bottom: 10px;*/
+}
+
+article h2 {
+	height: 55px; 
+	margin-bottom: 15px;
+	font-weight: 400;
+}
+
+#history-1 h2 {
+	background-position: 0 -216px;
+}
+
+#history-1 .content {
+	float:left;
+	width: 418px;
+}
+
+
+#history-2 h2 {
+	background-position: 0 -271px;
+}
+
+#history-3 h2 {
+	background-position: 0 -326px;
+}
+
+/* end content positioning */
+
+.blue-box, .news-item {
+	background-color: #50C8E8;
+	width: 92%;
+	float: left;
+	margin-bottom: 20px;
+	padding: 20px;
+	font-size: 13px;
+	line-height: 20px;
+	font-family:Helvetica,Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif;
+}
+
+.blue-box-cont {
+	clear: both;
+	display: block;
+	height: 340px;
+}
+
+.blue-box img {
+	margin:0 15px 15px 0;
+	float: left;
+}
+
+.post-42 h2 {
+	height: auto;
+	margin: 10px 0 10px 0;	
+}
+
+.news-item {
+	width: 40%;
+	margin-right: 5%;
+}
+
+.news-item .date {
+	font-style: italic;
+	font-size: 10px;	
+}
+
+/* plane positioning */
+#plane-wrapper {
+	position: fixed;
+	top: 0;	
+	left:0;
+/*	display:none;*/
+	/*border:1px dashed orange;*/
+	/*z-index:-1;*/
+}
+
+#plane {	
+	position: absolute;
+	/*border:1px dashed yellow;*/
+	/*top: 560px !important;*/	
+}
+
+#zthe-plane {
+	width: 123px;
+	height: 137px;
+	background:url(images/plane.png) no-repeat 0 0;
+}
+
+#red-plane{
+	/*display:none;*/
+	width:266px;
+	height:166px;
+	background: url(images/red-plane-right.png); no-repeat 0 0;
+	/*border:1px dashed red;*/
+	z-index:-1;
+}
+
+.scrollingUp{
+	background: url(images/red-plane-left.png); no-repeat 0 0;
+}
+
+.cloud{
+	position:absolute;
+	width: 252px;
+	height: 196px;
+	background: url(images/cloud1.png) no-repeat 0 0;
+	z-index:125;
+}
+
+#cloud1{
+	background-position: 0 0;
+	top: 1200px;
+	left: 100px;
+}
+
+#cloud2{
+	background-position: 0 0;
+	top: 1300px;
+	left: -500px;
+}
+
+#cloud3{
+	background-position: 0 0;
+	top: 2550px;
+	left: 1250px;
+}
+
+/* end plane positioning */
+
+.give-options .mr_social_sharing_wrapper {
+	display: none;
+}
+
+.social-share .button {
+	display: inline-block;
+	margin-right: 3em;
+}
+
+::selection { background: #4FC7E7; color: #fff }
+::-moz-selection { background: #4FC7E7; color: #fff }
+ 
+img::selection { background: #4FC7E7 }
+img::-moz-selection { background: #4FC7E7 }
+
+/*  end styles */
+
+@media (max-width: 1000px) { 
+	#main-overlay.single {
+		width: 90%;
+	}
+}
+
+@media (max-width:860px) {
+
+	body {position: absolute !important;}
+
+	#logo-wrapper {
+		padding: 20px 0;
+	}
+
+	#logo, #menu  {
+		float: none;
+		margin: 0 auto 0 auto;
+		right: 0;
+	}
+		
+	#logo-outer {
+		height: auto;
+	}
+	
+	#give-now-button a, #social-media-links .twitter a, #social-media-links .fb a {
+		background-image:  none;
+		padding: 14px;
+	}
+	
+	.entry-title {
+		width: 75%;
+	}
+	
+}
+

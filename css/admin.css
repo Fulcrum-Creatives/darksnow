@@ -1,0 +1,218 @@
+/* WP admin addon CSS */
+.clearfix{ clear:both; }
+
+.custom-admin{
+    width:96%;
+    /*max-width:700px;*/
+    margin-top:15px;
+}
+  .custom-admin .admin-desc{
+    color:#aaa;
+    font-size:9pt;
+    text-align:right;
+  }
+  
+  #poststuff h2 {
+    margin-top: 0;
+    font-size: 12pt;
+    margin-bottom: 5px;
+    padding: 0;
+    clear: left;
+    text-align:left!important;
+    font-weight:bold;
+  }
+  
+  #titlediv, #poststuff .postarea {
+    margin-bottom: 10px;
+  }
+  
+    .custom-admin .postarea{
+      border:0!important;
+      box-shadow: none!important;
+    }
+    
+    .custom-admin .postarea.postimages{
+      margin:10px 0 10px;
+      border-top:1px solid #666;
+      border-bottom:1px solid #666;
+    }
+    
+    .custom-admin > div{
+        /*margin:0 0 20px 0;*/
+    }
+
+    .custom-admin .gallery {
+        clear:both;
+        margin:10px;
+    }
+    
+    .titlediv{
+      margin-bottom: 10px;
+      position: relative;
+    }
+    
+    .custom-admin label.inner, 
+    .custom-admin div.titlediv label {
+        color: #BBB;
+        font-size: 1.4em;
+        padding: 6px 4px 8px 6px;
+        position: absolute;
+    }
+
+	.custom-admin .notice {
+        color:#660000;
+        font-size:1.4em;
+    } 
+    
+    .custom-admin .chunky{
+        margin:1em;
+        font-size:1.4em;
+        font-variant:small-caps;
+        letter-spacing:-1px;
+    }
+    
+    .custom-admin label{
+        color:#333;
+    }
+    
+    
+    .custom-admin textarea{
+        height:150px;
+        border-color: #ccc;
+    }
+    
+    .custom-admin textarea, .custom-admin input, .custom-admin select{
+        margin: 1px;
+    }
+    
+    input[type="text"], input[type="password"], textarea {
+        -webkit-box-sizing: border-box;
+    }
+    
+    .custom-admin input[type="text"] {
+        border-bottom-left-radius: 6px 6px;
+        border-bottom-right-radius: 6px 6px;
+        border-style: solid;
+        border-width: 1px;
+        border-top-left-radius: 6px 6px;
+        border-top-right-radius: 6px 6px;
+        font-size: 11pt;
+        line-height: 100%;
+        outline: none;
+        padding: 3px 4px;
+        width: 100%;
+        cursor: text;
+        border-color: #ccc;
+        color:#666;
+    }
+    
+    label[for="current"]{
+      font-size: 1.4em;
+      curson:pointer;
+      width:165px;
+      line-height:1em;
+      padding:14px 0 0 0;
+    }
+    
+    .custom-admin input[type="checkbox"]{
+        font-size: 1.4em;
+        margin:0 5px 0 0;
+        width: auto;
+        cursor: pointer;
+    }
+    
+    .custom-admin input[type="text"].mini-text{
+        padding:0;
+        font-size:0.9em;
+    }
+    
+    .custom-admin input[type="submit"]{
+        
+    }
+    
+    .custom-admin input[type="button"]{
+        
+    }
+    
+    
+    #wpcontent select{
+      height:auto;
+      margin-top:4px;
+    }
+    
+    .custom-admin select{ 
+        padding:2px!important;
+        font-size:11pt!important;
+        width:auto;
+        min-width:200px;
+        color:#666!important;
+    }
+    
+    .custom-admin .mceEditor{
+        margin:0;
+        padding:0;
+        width:100%;
+    }
+    
+    .custom-admin textarea{ 
+        padding:2px;
+        font-size:10pt;
+        width:100%;
+        margin:1px 0 0 0;
+        color:#666;
+        /*display:none;*/
+    }
+
+	.custom-admin .admin-inner{
+        margin:.5em 1em;
+    }
+    
+    .custom-admin .custom-section{
+        background-color:#fff;
+        border:1px solid #E78F08;
+        margin-bottom:1em;
+    }
+    
+
+    
+    .custom-admin .custom-section-end{
+        /*background-color:#fefefe;*/
+        padding:.5em;
+        margin-bottom:1em;
+    }
+    
+    .custom-admin .admin-page-heading{
+        
+    }
+    
+    .custom-admin .admin-title{
+        padding:.75em;
+        background: #F6A828 url(/wp-content/themes/chp/images/ui-bg_gloss-wave_35_f6a828_500x100.png) 50% 50% repeat-x;
+        border-bottom:2px solid #E78F08;
+    }
+    
+        
+    .custom-admin .admin-page-footing{
+        padding:.5em;
+    }
+    
+    .submit{
+        margin:0;
+        padding:0;
+    }
+    
+    .custom-admin span.submit{
+        float:right;
+        /*margin:.5em;*/
+    }
+    
+    .custom-admin .admin-input{
+        margin:1em 1em;
+    }
+    
+    .custom-admin .admin-radio{
+    }
+    
+    .custom-admin .admin-input label{
+
+    }

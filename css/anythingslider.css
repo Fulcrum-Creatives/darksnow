@@ -1,0 +1,146 @@
+/*
+    AnythingSlider v1.4
+
+    By Chris Coyier: http://css-tricks.com
+    with major improvements by Doug Neiner: http://pixelgraphics.us/
+    based on work by Remy Sharp: http://jqueryfordesigners.com/
+*/
+
+/******* SET DEFAULT DIMENSIONS HERE ********/
+.anythingSlider {
+	width: 427px;
+	height: 334px;	
+	padding: 30px 30px;
+	background: url(../img/bg_slideshow.png) no-repeat 0 0;
+	position: relative;
+}
+
+/**** DO NOT CHANGE BELOW THIS LINE ****/
+/* anythingSlider viewport window */
+div.anythingSlider .anythingWindow {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+}
+
+/* anythingSlider base UL */
+ul.anythingBase {
+	background: transparent;
+	list-style: none;
+	position: absolute;
+	top: 0; left: 0;
+	margin: 0;
+}
+ul.anythingBase li.panel {
+	background: transparent;
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+/* Navigation Arrows */
+div.anythingSlider .arrow {
+	top: 50%;
+	position: absolute;
+	display: block;	
+}
+div.anythingSlider .arrow a {
+	display: block;
+	height: 46px;	
+	width: 23px;
+	text-align: center;
+	outline: 0;
+	background: url(../img/btn-arrows.png) no-repeat;
+	text-indent: -9999px;
+}
+div.anythingSlider .forward { right: 30px; z-index: 999; }
+div.anythingSlider .back { left: 30px; z-index: 999; }
+div.anythingSlider .forward a { background-position: -23px 0; }
+div.anythingSlider .back a { background-position: 0 0; }
+div.anythingSlider .forward a:hover, div.anythingSlider .forward a.hover { background-position: -23px -46px; }
+div.anythingSlider .back a:hover, div.anythingSlider .back a.hover { background-position: 0 -46px; }
+
+/* Navigation Links */
+div.anythingSlider .thumbNav { margin: 0; }
+div.anythingSlider .thumbNav li { display: inline; }
+div.anythingSlider .thumbNav a {
+	color: black;
+	font: 11px/18px Georgia, Serif;
+	display: inline-block;
+	text-decoration: none;
+	padding: 2px 8px;
+	height: 18px;
+	margin: 0 5px 0 0;
+	background-image: url(../images/cellshade.png);
+	background-repeat: repeat-x;
+	text-align: center;
+	outline: 0;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+div.anythingSlider .thumbNav a:hover { background-image: none; }
+
+/* slider autoplay right-to-left, reverse order of nav links to look better */
+div.anythingSlider.rtl .thumbNav a { float: right; } /* reverse order of nav links */
+div.anythingSlider.rtl .thumbNav { float: left; }    /* move nav link group to left */
+/* div.anythingSlider.rtl .start-stop { float: right; } */ /* move start/stop button - in case you want to switch sides */
+
+/* Autoplay Start/Stop button */
+div.anythingSlider .start-stop {
+	z-index: 10;
+	background: green url(../images/cellshade.png) repeat-x center top;
+	color: white;
+	padding: 2px 5px;
+	width: 40px;
+	text-align: center;
+	text-decoration: none;
+	float: right;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+div.anythingSlider .start-stop.playing { background-color: red; }
+div.anythingSlider .start-stop:hover, div.anythingSlider .start-stop.hover { background-image: none; color: #ff0 }
+
+
+
+#form-container div.anythingSlider .arrow {
+	top: 32px;
+}
+
+#form-container div.anythingSlider .arrow a {	
+	height: 28px;	
+	width: 14px;	
+	background: url(../img/btn-arrows-small.png) no-repeat;	
+}
+#form-container div.anythingSlider .forward { right: 10px; z-index: 999; }
+#form-container div.anythingSlider .back { left: 0px; z-index: 999; }
+#form-container div.anythingSlider .forward a { background-position: -14px 0; }
+#form-container div.anythingSlider .back a { background-position: 0 0; }
+#form-container div.anythingSlider .forward a:hover, #form-container div.anythingSlider .forward a.hover { background-position: -14px -28px; }
+#form-container div.anythingSlider .back a:hover, #form-container div.anythingSlider .back a.hover { background-position: 0 -28px; }
+
+#form-container .anythingSlider {
+	width: 510px;
+	height: 116px;	
+	padding: 0;
+	background: none;
+	position: relative;
+}
+
+#extra-info .anythingSlider {
+	width: 430px;
+	height: 326px;	
+	padding: 0;
+	background: none;
+	position: relative;
+}
+
+#extra-info div.anythingSlider .forward { right: 0px; }
+#extra-info div.anythingSlider .back { left: 0px; }

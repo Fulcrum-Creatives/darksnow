@@ -1,0 +1,2 @@
+[13-Feb-2015 08:02:54 America/New_York] PHP Fatal error:  Call to undefined function get_post_format() in /home/darksnow/public_html/wp-content/themes/darksnow/index.php on line 7
+[13-Feb-2015 08:27:51 America/New_York] PHP Fatal error:  Call to undefined function get_post_format() in /home/darksnow/public_html/wp-content/themes/darksnow/index.php on line 7
